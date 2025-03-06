@@ -30,7 +30,7 @@ fun WeatherApp() {
         try {
             val response = RetrofitClient.weatherService.getWeather(
                 city = city,
-                apiKey = "901ed79b4c3850e7135853e754c81a49"  // Replace with your actual API key
+                apiKey = ""  // Replace with your actual API key
             )
 
             val desc = response.weather.firstOrNull()?.description?.lowercase() ?: ""
